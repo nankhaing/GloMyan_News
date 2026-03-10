@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Myanmar ASEAN AI News</title>
+
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+Myanmar + ASEAN AI News
+</header>
+
+<div class="menu">
+
+<button onclick="loadCategory('myanmar')">Myanmar</button>
+<button onclick="loadCategory('asean')">ASEAN</button>
+<button onclick="loadCategory('world')">World</button>
+<button onclick="loadCategory('tech')">Tech</button>
+<button onclick="loadCategory('sports')">Sports</button>
+
+</div>
+
+<div class="search">
+<input type="text" placeholder="Search news..." onkeyup="searchNews(this.value)">
+</div>
+
+<div id="news">Loading...</div>
+
+<script src="sources.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
